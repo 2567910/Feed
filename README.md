@@ -9,7 +9,6 @@
 #### How to View
 
 * Download the Zip File on Your Computer and Open `index.html` in Your Browser
-or
-* Click Here [Feed Testing](http://gokuldh.github.io/Feed)
+
 
 #### Use As You Like, Give Credit If You Can!!
