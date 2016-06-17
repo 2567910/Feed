@@ -26,14 +26,14 @@ $(function() {
             expect(allFeeds.length).not.toBe(0);
         });
 
-        it('all have a url defined and not empty', function(){
+        it('Have URL Defined & not Empty', function(){
             for(i = 0; i < allFeeds.length; i++){
                 expect(allFeeds[i].url).toBeDefined(); //Checks if the URL's Exist in the Array
                 expect(allFeeds[i].url).not.toBe(''); //Checks Weather the Existing URL's are not Empty
             }
         });
 
-        it('all have a name defined and not empty', function(){
+        it('Have Name Defined & not Empty', function(){
             for(i = 0; i < allFeeds.length; i++){
                 expect(allFeeds[i].name).toBeDefined();
                 expect(allFeeds[i].name).not.toBe('');
@@ -42,14 +42,14 @@ $(function() {
 
     });
 
-    describe('The menu', function(){
+    describe('The Menu', function(){
 
-        it('has a menu hidden by default', function(){
+        it('Hidden Menu as Default', function(){
             expect($('body').hasClass('menu-hidden')).toBe(true);
         });//Using jQuery we Traverse the DOM and find the Class Exists
 
 
-        it('displays and remove the menu when the menu icon is clicked', function(){
+        it('Menu Displays & Hides When Clicked', function(){
 
             $('.menu-icon-link').click(); //Simulates a Click on the Link/Button
             expect($('body').hasClass('menu-hidden')).toBe(false);
@@ -67,7 +67,7 @@ $(function() {
             loadFeed(0, done);
         }); // Loads the Feed Before Testing the Spec
 
-        it('has at least one .entry when loadFeed is completed', function(done) {
+        it('Consists of Atleast One Entry When Loaded', function(done) {
             expect($('.feed .entry').length).toBeGreaterThan(0);
             done();
         });
@@ -76,8 +76,8 @@ $(function() {
 
     describe('New Feed Selection', function(){
 
-        var $feed;
-        var $newFeed;
+        var feed;
+        var newfeed;
 
         beforeEach(function(done){
             loadFeed(0, function(){ //Loads Feed Before Testing the Spec
@@ -86,7 +86,7 @@ $(function() {
             loadFeed(1, done);
         }); //Loads Feed Second Time(Reloads)
 
-        it('changes of feed content when a new feed is loaded by loadFeed', function(){
+        it('Changes Feed Content When Reloaded', function(){
             $newFeed = $('.header-title').html();
             //Saves the Newer Loaded Feed
             expect($feed).not.toEqual($newFeed);
