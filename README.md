@@ -5,6 +5,7 @@
 * In this Project, Jasmine testing Suite was Used to Test for Various Conditions & Functionality.
 * The Initial Feed Reader & Integrated Testing Suite was Provided by Udacity.
 * This Project is a Part of Front End NanoDegree by Udacity.
+* Wrote Tests Suites to Test The Functionality Tests & Behaviour Changes
 
 #### How to View
 
